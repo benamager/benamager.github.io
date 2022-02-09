@@ -16,7 +16,11 @@ burgerBtn.addEventListener("click", function(){
             burgerBtn.classList.replace("fa-bars", "fa-chevron-down")
     } else {
             navigationContainer.style.paddingBottom = "0rem";
-            navigationContainer.style.maxHeight = "110px";
+            if (window.innerHeight > 700){
+                navigationContainer.style.maxHeight = "110px";
+            } else {
+                navigationContainer.style.maxHeight = "80px";
+            }
             valutaSelector.style.opacity = "0";
             burgerBtn.classList.replace("fa-chevron-down", "fa-bars")
     }
@@ -26,11 +30,15 @@ burgerBtn.addEventListener("click", function(){
 window.addEventListener("resize", function(){
     if (window.innerWidth > 840){
         navigationContainer.style.paddingBottom = "unset";
-        navigationContainer.style.maxHeight = (navigationContainer.scrollHeight+110) + "px";
         valutaSelector.style.opacity = "1";
+        navigationContainer.style.maxHeight = (navigationContainer.scrollHeight+110) + "px";
     } else {
         navigationContainer.style.paddingBottom = "0rem";
-        navigationContainer.style.maxHeight = "110px";
+        if (window.innerHeight > 700){
+            navigationContainer.style.maxHeight = "110px";
+        } else {
+            navigationContainer.style.maxHeight = "80px";
+        }
         valutaSelector.style.opacity = "0";
         burgerBtn.classList.replace("fa-chevron-down", "fa-bars")
     }
