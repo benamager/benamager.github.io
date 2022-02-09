@@ -1,0 +1,356 @@
+<!-- weedshop startpage -->
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <!-- meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- for SEO -->
+    <title>Gorilla - Weedshop.dk</title>
+    <meta
+      name="description"
+      content="Køb lovlige topskud og færdiglavede på weedshop.dk - første leverandør i Danmark."
+    />
+    <meta
+      name="keywords"
+      content="tjald, weed, weedshop, skunk, topskud, færdiglavede"
+    />
+    <!-- links n scripts -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon_32x32.png" />
+    <script
+      src="https://kit.fontawesome.com/7d1de64b2a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script type="module" src="js/product.js" defer></script>
+    <script src="js/modules/m-validateFooter.js" defer></script>
+    <script src="js/modules/m-burgerMenu.js" defer></script>
+    <script src="js/modules/m-footerAccordin.js" defer></script>
+    <script type="module" src="js/modules/m-convertPrice.js" defer></script>
+    <!-- end meta -->
+  </head>
+  <body>
+    <!-- body -->
+    <header>
+      <p class="topBanner">Gratis fragt ved køb over 499 kr.</p>
+      <!-- nav -->
+      <nav class="navigation">
+        <a class="navigation__logo__a" href="index.html">
+          <img
+            src="images/logo_weedshop.png"
+            alt="Logo for weedshop.dk, billede er krydset rygepinde."
+            class="navigation__logo"
+          />
+        </a>
+        <!-- dropdown module -->
+        <ul class="navigation-dropdown">
+          <li class="navigation-dropdown__element">
+            <a
+              href="javascript:alert('Denne side findes ikke...')"
+              class="navigation-dropdown__ahref underlineEffect underlineEffect--nav"
+              >Produkter</a
+            >
+            <ul class="navigation-dropdown__dropdown">
+              <li class="navigation-dropdown__dropdown__element">
+                <a
+                  class="navigation-dropdown__dropdown__ahref"
+                  href="index.html#topskud"
+                  >Topskud</a
+                >
+              </li>
+              <li class="navigation-dropdown__dropdown__element">
+                <a
+                  class="navigation-dropdown__dropdown__ahref"
+                  href="index.html#joints"
+                  >Røgelsespinde</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="navigation-dropdown__element">
+            <a
+              class="navigation-dropdown__ahref underlineEffect underlineEffect--nav"
+              href="javascript:alert('Denne side findes ikke...')"
+              >Om os</a
+            >
+          </li>
+          <li class="navigation-dropdown__element">
+            <a
+              class="navigation-dropdown__ahref underlineEffect underlineEffect--nav"
+              href="javascript:alert('Denne side findes ikke...')"
+              >Ofte stillede spørgsmål</a
+            >
+          </li>
+          <!-- end dropdown module -->
+        </ul>
+        <!-- icons module -->
+        <ul class="navigation-icons">
+          <li>
+            <select name="valuta" id="valuta" class="valuta">
+              <option value="dkk">DKK</option>
+              <option value="usd">USD</option>
+              <option value="eur">EUR</option>
+              <option value="sek">SEK</option>
+              <option value="nok">NOK</option>
+            </select>
+          </li>
+          <li class="navigation-icons__icon">
+            <i data-feather="search"></i>
+          </li>
+          <li class="navigation-icons__icon">
+            <i data-feather="user"></i>
+          </li>
+          <li
+            class="navigation-icons__icon navigation-icons__icon__countContainer"
+          >
+            <i data-feather="shopping-cart"></i>
+            <p>0</p>
+          </li>
+          <!-- end module icons -->
+        </ul>
+        <i class="fas fa-bars" id="burgerToggle"></i>
+        <!-- end nav -->
+      </nav>
+      <!-- end header -->
+    </header>
+    <!-- main -->
+    <main
+      data-productid="copenhagenKush"
+      class="wrapper wrapper--smaller product"
+    >
+      <!-- product img -->
+      <div class="productImgContainer">
+        <img
+          src="images/products/topskud/gorilla/gorilla_package.webp"
+          alt=""
+          class="productImgContainer__img"
+        />
+        <!-- end product img -->
+      </div>
+      <!-- product info -->
+      <div class="productInfo">
+        <h1 class="productInfo__header">Gorilla</h1>
+        <strong class="productInfo__price currencyConverter">79,00 kr</strong>
+        <label class="productInfo__amountLabel" for="amount">Mængde</label>
+        <select class="productInfo__amount" name="amount" id="amount">
+          <option value="1gram">1 gram</option>
+          <option value="2gram">2 gram</option>
+          <option value="3gram">3 gram</option>
+          <option value="5gram">5 gram</option>
+          <option value="10gram">10 gram</option>
+          <option value="20gram">20 gram</option>
+          <option value="50gram">50 gram</option>
+        </select>
+        <button class="productInfo__btn">
+          <i class="fas fa-shopping-cart"></i> Tilføj til kurv
+        </button>
+        <ul class="productInfo__paymentOptions">
+          <li>
+            <img src="images/payment_options/mobilepay_clean.png" alt="" />
+          </li>
+          <li>
+            <img src="images/payment_options/visa-electron_clean.png" alt="" />
+          </li>
+          <li>
+            <img src="images/payment_options/visa_clean.png" alt="" />
+          </li>
+          <li>
+            <img src="images/payment_options/mastercard_clean.png" alt="" />
+          </li>
+        </ul>
+        <h2 class="productInfo__descHeader">Beskrivelse</h2>
+        <!-- <p class="productInfo__desc">
+          Gorilla er som dens navnefælle bygget tæt og kraftfuld ligeledes har
+          den en identisk styrke med sit høje indhold af CBD. Oplev Gorilla når
+          du vil en tur i junglen med vennerne.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Reprehenderit optio provident nulla architecto quod ratione
+          consequuntur aspernatur molestias, delectus non!
+        </p>
+        <strong class="productInfo__strengthCBD">CBD: 13-15%</strong>
+        <strong class="productInfo__strengthTHC">THC &lt;0,2%</strong> -->
+        <!-- end product info -->
+      </div>
+      <ul class="productImages">
+        <!-- <li>
+          <img
+            src="images/products/topskud/gorilla/gorilla_package.webp"
+            alt=""
+          />
+        </li>
+        <li>
+          <img src="images/products/topskud/gorilla/gorilla_item.webp" alt="" />
+        </li> -->
+      </ul>
+    </main>
+    <!-- end main -->
+    <footer>
+      <div class="wrapper wrapper--smaller footerContainer">
+        <div class="footerContainer__socials footerElement">
+          <a
+            class="footerElement__txt"
+            href="https://facebook.com"
+            target="_blank"
+            ><i class="fab fa-facebook-f"></i></a
+          ><a
+            class="footerElement__txt"
+            href="https://instagram.com"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <div class="footerContainer__sitemap footerElement">
+          <div class="dropdownModuleContainer">
+            <h3 class="footerElement__header dropdownModule__header">
+              SITEMAP
+            </h3>
+            <i class="fas fa-chevron-down dropdownModule__arrow"></i>
+          </div>
+          <ul class="footerElement__list dropdownModuleDropdown">
+            <li class="footerElement__txt">
+              <a
+                class="underlineEffect"
+                href="javascript:alert('Denne side findes ikke...')"
+                >Hjem</a
+              >
+            </li>
+            <li class="footerElement__txt">
+              <a
+                class="underlineEffect"
+                href="javascript:alert('Denne side findes ikke...')"
+                >Produkter</a
+              >
+            </li>
+            <li class="footerElement__txt">
+              <a
+                class="underlineEffect"
+                href="javascript:alert('Denne side findes ikke...')"
+                >Om os</a
+              >
+            </li>
+            <li class="footerElement__txt">
+              <a
+                class="underlineEffect"
+                href="javascript:alert('Denne side findes ikke...')"
+                >Ofte stillede spørgsmål</a
+              >
+            </li>
+            <li class="footerElement__txt">
+              <a
+                class="underlineEffect"
+                href="javascript:alert('Denne side findes ikke...')"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footerContainer__others footerElement">
+          <div class="dropdownModuleContainer">
+            <h3 class="footerElement__header dropdownModule__header">ANDET</h3>
+            <i class="fas fa-chevron-down dropdownModule__arrow"></i>
+          </div>
+          <ul class="footerElement__list dropdownModuleDropdown">
+            <li class="footerElement__txt">
+              <a
+                class="underlineEffect"
+                href="javascript:alert('Denne side findes ikke...')"
+                >Handelsbetingelser</a
+              >
+            </li>
+            <li class="footerElement__txt">
+              <a
+                class="underlineEffect"
+                href="javascript:alert('Denne side findes ikke...')"
+                >Refusionspolitik</a
+              >
+            </li>
+            <li class="footerElement__txt">
+              <a
+                class="underlineEffect"
+                href="javascript:alert('Denne side findes ikke...')"
+                >Servicevilkår</a
+              >
+            </li>
+            <li class="footerElement__txt">
+              <a
+                class="underlineEffect"
+                href="javascript:alert('Denne side findes ikke...')"
+                >Privatlivspolitik</a
+              >
+            </li>
+            <li class="footerElement__txt">
+              <a
+                class="underlineEffect"
+                href="javascript:alert('Denne side findes ikke...')"
+                >Servicevilkår</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footerContainer__newsletter footerElement">
+          <h3 class="footerElement__header">TILMELD DIG VORES NYHEDSBREV</h3>
+          <p class="footerElement__txt">
+            Få adgang til eksklusive priser, og vær den første til at høre om
+            nye produkter.
+          </p>
+          <form class="mailForm" action="index.html">
+            <input
+              type="email"
+              name="email"
+              class="mailForm__input"
+              placeholder="Indtast din e-mail"
+            />
+            <p class="mailForm__error"></p>
+            <button class="mailForm__submit" type="submit">TILMELD</button>
+          </form>
+        </div>
+      </div>
+      <div class="footerBottom wrapper wrapper--smaller">
+        <p class="footerBottom__text">
+          CBD produkter er ikke medicin og kan ikke diagnosticere, behandle
+          eller kurere sygdomme.<br />Rådfør dig altid med egen læge, før du
+          starter på et nyt kostsupplerende program.<br />
+          CVR: sut erri
+        </p>
+        <ul class="paymentOptions">
+          <li class="paymentOptions__element">
+            <img
+              src="images/payment_options/visa-color_x32.png"
+              alt="Betalingsmuligheden Visa, hermed et logo af den."
+              class="paymentOptions__img"
+            />
+          </li>
+          <li class="paymentOptions__element">
+            <img
+              src="images/payment_options/mobilepay_x32.png"
+              alt="Betalingsmuligheden MobilePay, hermed et logo af den."
+              class="paymentOptions__img"
+            />
+          </li>
+          <li class="paymentOptions__element">
+            <img
+              src="images/payment_options/mastercard-color_x32.png"
+              alt="Betalingsmuligheden Mastercard, hermed et logo af den."
+              class="paymentOptions__img"
+            />
+          </li>
+          <li class="paymentOptions__element">
+            <img
+              src="images/payment_options/applepay-color_x32.png"
+              alt="Betalingsmuligheden ApplePay, hermed et logo af den."
+              class="paymentOptions__img"
+            />
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- end body -->
+    <script>
+      feather.replace()
+    </script>
+  </body>
+</html>

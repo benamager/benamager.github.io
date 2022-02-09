@@ -1,0 +1,24 @@
+/* the underline effect on hover */
+.underlineEffect {
+  position: relative;
+}
+
+.underlineEffect::after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  bottom: -0.1rem;
+  background-color: #fff;
+  position: absolute;
+  left: 0%;
+  -transform: translate(-50%, -50%);
+  transition: width 0.25s;
+}
+
+.underlineEffect--nav::after {
+  bottom: 0.9rem;
+}
+
+.underlineEffect:hover::after {
+  width: 100%;
+}

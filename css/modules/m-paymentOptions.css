@@ -1,0 +1,11 @@
+/* the ul */
+.paymentOptions {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+/* the img inside li */
+.paymentOptions__img {
+  width: 25px;
+}

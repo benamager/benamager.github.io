@@ -1,0 +1,64 @@
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  !! BASE CSS !!
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+/* imports */
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  background-color: var(--color-bcg);
+}
+
+/* CSS variables */
+:root {
+  /* background colors */
+  --colorBcg-topBanner: #b7a068;
+  --colorBcg-nav: #000000;
+  --colorBcg-navCount: #ffffff;
+  --colorBcg-btn: #b7a068;
+  --colorBcg-productFull: #000000;
+  --colorBcg-qualitiesFull: #f8f8f8;
+  --colorBcg-footer: #000000;
+  /* font colors */
+  --colorTxt-onWhiteBcg: #000000;
+  --colorTxt-topBanner: #ffffff;
+  --colorTxt-btn: #ffffff;
+  --colorTxt-nav: #ffffff;
+  --colorTxt-navCount: #000000;
+  --colorTxt-hero: #ffffff;
+  --colorTxt-productFull: #ffffff;
+  --colorTxt-qualitiesFull: #000000;
+  --colorTxt-footerHeader: #ffffff;
+  --colorTxt-footerText: #dddddd;
+  --colorTxt-footerBelow: #707070;
+  /* timings */
+  --time-dropdownUnfold: 0.3s;
+  --time-btnTransition: 0.3s;
+  --time-productFade: 0.3s;
+  --time-dropdownHoverColor: 0.2s;
+  --time-footerError: 0.3s;
+  --time-footerDropdownMobile: 0.3s;
+
+  /* --color-weed: #b7a068;
+  --color-black: #000000;
+  --color-grey: #f8f8f8;
+  --color-white: #ffffff;
+  --color-bcg: #ffffff; */
+}

@@ -1,0 +1,46 @@
+.navigation-dropdown__element,
+.navigation-dropdown__ahref {
+  color: var(--colorTxt-nav);
+  font-weight: 500;
+  font-size: 0.875rem;
+  letter-spacing: 0.05rem;
+  padding: 1rem 0;
+}
+
+/* the dropdown container, containing li elements */
+.navigation-dropdown {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  gap: 2.75rem;
+  z-index: 100;
+}
+
+/* the dropdown element */
+.navigation-dropdown__element:hover .navigation-dropdown__dropdown {
+  visibility: visible;
+  transform: translateY(1rem);
+}
+
+/* the dropdown itself */
+.navigation-dropdown__dropdown {
+  position: absolute;
+  background-color: var(--colorBcg-nav);
+  transform: translateY(60px);
+  padding: 1rem;
+  width: 200px;
+  transition: transform var(--time-dropdownUnfold) ease-out;
+  line-height: 2rem;
+  visibility: hidden;
+}
+
+.navigation-dropdown__dropdown__ahref {
+  color: var(--colorTxt-nav);
+  font-weight: 400;
+  font-size: 0.8125rem;
+  transition: color var(--time-dropdownHoverColor) ease;
+}
+
+.navigation-dropdown__dropdown__ahref:hover {
+  color: var(--colorBcg-topBanner);
+}

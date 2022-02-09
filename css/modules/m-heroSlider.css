@@ -1,0 +1,62 @@
+/* hero container */
+.hero {
+  display: grid;
+  overflow: hidden;
+}
+
+/* article general */
+.heroArticle {
+  grid-area: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 564px;
+  border-bottom: 2.5rem solid #000;
+  color: var(--colorTxt-hero);
+  text-align: center;
+  padding: 0 2rem;
+}
+
+/* modifier */
+.heroArticle--page1 {
+  background-image: url("../../images/hero_image.webp");
+  background-size: cover;
+  background-position: center;
+  z-index: 10;
+  transition: transform 1.5s ease;
+}
+
+/* modifier */
+.heroArticle--page2 {
+  background-color: #212223;
+  transition: transform 1.5s ease;
+  transform: translateX(100%);
+}
+
+/* content styling */
+.heroArticle__content__header {
+  font-weight: 700;
+  font-size: clamp(26px, 5vw, 36px);
+  /* font-size: 36px; orginal font-size */
+  letter-spacing: 0.72px;
+  margin-bottom: 0.45rem;
+}
+
+.heroArticle__content__text {
+  font-size: clamp(16px, 3vw, 18px);
+  /* font-size: 18px; original font size */
+  font-weight: 300;
+}
+
+/* controls */
+.hero__timer {
+  grid-area: 1/1;
+  z-index: 100;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #ffffff50;
+  align-self: end;
+  justify-self: end;
+  padding-bottom: 0.34rem;
+  margin-right: 3rem;
+}

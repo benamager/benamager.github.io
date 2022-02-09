@@ -1,0 +1,123 @@
+.wrapper.product {
+  padding-top: 2rem;
+  display: grid;
+  row-gap: 0.3rem;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+}
+
+.productImgContainer {
+  background-repeat: no-repeat;
+  max-height: 690px;
+  overflow: hidden;
+  margin-right: 3rem;
+  /* background-position: 20% 50%; gets changed with js */
+}
+
+/* product info container */
+.productInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+/* product header */
+.productInfo__header {
+  font-size: 1.75rem;
+}
+
+/* product price */
+.productInfo__price {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/* product select (amount) */
+.productInfo__amountLabel {
+  margin-top: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.productInfo__amount {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #d1d5db;
+}
+
+.productInfo__amount:focus {
+  outline: none;
+}
+
+/* product btn */
+.productInfo__btn {
+  background-color: var(--colorBcg-btn);
+  color: var(--colorTxt-btn);
+  padding: 1.5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color var(--time-btnTransition);
+}
+
+.productInfo__btn:hover {
+  background-color: #000000;
+}
+
+/* payment options */
+.productInfo__paymentOptions {
+  margin-top: 1rem;
+  justify-self: flex-start;
+  display: flex;
+  align-items: center;
+  max-width: 200px;
+}
+
+/* product description */
+.productInfo__descHeader {
+  font-size: 1rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.productInfo__desc {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.productInfo__strength {
+  font-weight: 300;
+}
+
+/* product images */
+.productImages {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.productImages li img {
+  max-width: 75px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper.product {
+    row-gap: 0.3rem;
+    grid-template-columns: 1fr;
+  }
+  .productImgContainer {
+    margin-right: 0;
+    background-color: #000000;
+    display: flex;
+  }
+  .productImgContainer__img {
+    max-width: 400px;
+    transform: scale(1.6);
+    margin: 0 auto;
+  }
+  .productImages {
+    grid-row-start: 2;
+  }
+}

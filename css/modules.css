@@ -1,0 +1,18 @@
+/* navigation */
+@import url("modules/m-navigation.css");
+@import url("modules/m-navigationDropdown.css");
+@import url("modules/m-navigationIcons.css");
+@import url("modules/m-heroSlider.css");
+@import url("modules/m-productGrid.css");
+@import url("modules/m-buttons.css");
+@import url("modules/m-heading.css");
+@import url("modules/m-productFull.css");
+@import url("modules/m-qualitiesFull.css");
+@import url("modules/m-footer.css");
+@import url("modules/m-underline.css");
+@import url("modules/m-mailForm.css");
+@import url("modules/m-paymentOptions.css");
+@import url("modules/m-valuta.css");
+
+/* for product */
+@import url("modules/m-product.css");

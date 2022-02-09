@@ -1,0 +1,43 @@
+/* button default */
+.button {
+  background-color: var(--colorBcg-btn);
+  color: var(--colorTxt-btn);
+  font-weight: 700;
+  font-size: 1rem;
+  display: inline-block;
+  user-select: none;
+  padding: 0.75rem 2.6rem;
+}
+
+/* button with outline transition */
+.button-outline-ts {
+  transition: background-color var(--time-btnTransition) ease,
+    border var(--time-btnTransition) ease;
+  border: 3px solid var(--colorBcg-btn);
+}
+
+.button-outline-ts:hover {
+  border: 3px solid #ffffff;
+  background-color: #000000;
+}
+
+/* button without outline transition */
+.button-ts {
+  transition: background-color var(--time-btnTransition) ease;
+}
+
+.button-ts:hover {
+  background-color: #000000;
+}
+
+/* modifiers */
+.button-outline-ts--mtop {
+  margin-top: 2.75rem;
+}
+
+.button-ts {
+  display: block;
+  max-width: fit-content;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}

@@ -1,0 +1,10 @@
+.valuta {
+  border: none;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  transition: opacity 0.3s ease-in;
+}
+
+.valuta:focus {
+  outline: none;
+}

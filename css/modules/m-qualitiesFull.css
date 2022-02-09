@@ -1,0 +1,43 @@
+/* full width container */
+.qualitiesFull {
+  background-color: var(--colorBcg-qualitiesFull);
+  color: var(--colorTxt-qualitiesFull);
+  width: 100%;
+  overflow: hidden;
+}
+
+/* the ul */
+.qualitiesFull__list {
+  display: flex;
+  gap: 2rem;
+}
+
+/* item of ul */
+.qualitiesFull__listItem {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.qualitiesFull__listItem__img {
+  width: 90px;
+}
+
+.qualitiesFull__listItem__header {
+  font-size: 1.625rem;
+  margin-top: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+/* media queries */
+@media screen and (max-width: 920px) {
+  .qualitiesFull__list {
+    width: 100%;
+    display: flex;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+  }
+  .qualitiesFull__listItem {
+    scroll-snap-align: start;
+    min-width: 90%;
+  }
+}

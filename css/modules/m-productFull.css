@@ -1,0 +1,76 @@
+/* container with width 100vw */
+.productFull {
+  margin-top: 3.25rem;
+  background-color: var(--colorBcg-productFull);
+  height: clamp(320px, 50vw, 550px);
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* the container for img & content */
+.productFull__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+/* the img */
+.productFull__img {
+  height: 100%;
+  max-width: 600px;
+  object-fit: contain;
+}
+
+/* the content container */
+.productFull__contentContainer {
+  color: var(--colorTxt-productFull);
+  text-align: center;
+}
+
+.productFull__contentContainer__header {
+  font-size: clamp(26px, 5vw, 36px);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.productFull__contentContainer__text {
+  font-size: clamp(16px, 3vw, 18px);
+  font-weight: 300;
+}
+
+.productFull__contentContainer__button {
+  margin-top: 2.5rem;
+}
+
+/* media queries */
+@media screen and (max-width: 1000px) {
+  .productFull {
+    background-image: url("../../images/products/startpakken/startpakken_large.webp");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  .productFull::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000090;
+  }
+  .productFull__container {
+    grid-template-columns: 1fr;
+  }
+  .productFull__img {
+    display: none;
+  }
+  .productFull__contentContainer__header,
+  .productFull__contentContainer__text,
+  .productFull__contentContainer__button {
+    position: relative;
+  }
+}

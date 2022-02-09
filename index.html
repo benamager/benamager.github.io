@@ -1,13 +1,833 @@
+<!-- weedshop startpage -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
+    <!-- meta -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <!-- for SEO -->
+    <title>Lovlige CBD topskud - Weedshop.dk</title>
+    <meta
+      name="description"
+      content="Køb lovlige topskud og færdiglavede på weedshop.dk - første leverandør i Danmark."
+    />
+    <meta
+      name="keywords"
+      content="tjald, weed, weedshop, skunk, topskud, færdiglavede"
+    />
+    <!-- links n scripts -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon_32x32.png" />
+    <script src="js/modules/m-validateFooter.js" defer></script>
+    <script src="js/modules/m-heroSlider.js" defer></script>
+    <script src="js/modules/m-burgerMenu.js" defer></script>
+    <script src="js/modules/m-footerAccordin.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/7d1de64b2a.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script type="module" src="js/modules/m-convertPrice.js" defer></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- end meta -->
   </head>
   <body>
-    Hej
+    <!-- body -->
+    <header>
+      <p class="topBanner">Gratis fragt ved køb over 499 kr.</p>
+      <!-- nav -->
+      <nav class="navigation">
+        <a class="navigation__logo__a" href="#">
+          <img
+            src="images/logo_weedshop.png"
+            alt="Logo for weedshop.dk, billede er krydset rygepinde."
+            class="navigation__logo"
+          />
+        </a>
+        <!-- dropdown module -->
+        <ul class="navigation-dropdown burgerElement">
+          <li class="navigation-dropdown__element">
+            <a
+              href="javascript:alert('Denne side findes ikke...')"
+              class="navigation-dropdown__ahref underlineEffect underlineEffect--nav"
+              >Produkter</a
+            >
+            <ul class="navigation-dropdown__dropdown">
+              <li class="navigation-dropdown__dropdown__element">
+                <a class="navigation-dropdown__dropdown__ahref" href="#topskud"
+                  >Topskud</a
+                >
+              </li>
+              <li class="navigation-dropdown__dropdown__element">
+                <a class="navigation-dropdown__dropdown__ahref" href="#joints"
+                  >Røgelsespinde</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="navigation-dropdown__element">
+            <a
+              class="navigation-dropdown__ahref underlineEffect underlineEffect--nav"
+              href="javascript:alert('Denne side findes ikke...')"
+              >Om os</a
+            >
+          </li>
+          <li class="navigation-dropdown__element">
+            <a
+              class="navigation-dropdown__ahref underlineEffect underlineEffect--nav"
+              href="javascript:alert('Denne side findes ikke...')"
+              >Ofte stillede spørgsmål</a
+            >
+          </li>
+          <!-- end dropdown module -->
+        </ul>
+        <!-- icons module -->
+        <ul class="navigation-icons burgerElement">
+          <li>
+            <select name="valuta" id="valuta" class="valuta">
+              <option value="dkk">DKK</option>
+              <option value="usd">USD</option>
+              <option value="eur">EUR</option>
+              <option value="sek">SEK</option>
+              <option value="nok">NOK</option>
+            </select>
+          </li>
+          <li class="navigation-icons__icon">
+            <i data-feather="search"></i>
+          </li>
+          <li class="navigation-icons__icon">
+            <i data-feather="user"></i>
+          </li>
+          <li
+            class="navigation-icons__icon navigation-icons__icon__countContainer"
+          >
+            <i data-feather="shopping-cart"></i>
+            <p>0</p>
+          </li>
+          <!-- end module icons -->
+        </ul>
+        <i class="fas fa-bars" id="burgerToggle"></i>
+        <!-- end nav -->
+      </nav>
+      <!-- hero -->
+      <section class="hero">
+        <article class="heroArticle heroArticle--page1">
+          <div class="heroArticle__content">
+            <h1 class="heroArticle__content__header">
+              KØB DIN WEED - HELT LOVLIGT
+            </h1>
+            <p class="heroArticle__content__text">
+              Vi sælger EU-godkendte cannabis topskud.<br />Alle vores produkter
+              er 100% lovlige i Danmark .
+            </p>
+            <a
+              class="heroArticle__content__link button button-outline-ts button-outline-ts--mtop"
+              href="javascript:alert('Denne side findes ikke...')"
+              >PRODUKTER</a
+            >
+          </div>
+        </article>
+        <article class="heroArticle heroArticle--page2">
+          <div class="heroArticle__content">
+            <h1 class="heroArticle__content__header">
+              VORES INSTAGRAM ER DEAKTIVERET
+            </h1>
+            <p class="heroArticle__content__text">
+              Instagram har lukket vores konto, men hjemmeside er stadig 100%
+              oppe og køre.<br />I kan skrive til os direkte i vores nye
+              chatfunktion, eller på vores nye instagram @weedshopdk
+            </p>
+            <a
+              class="heroArticle__content__link button button-outline-ts button-outline-ts--mtop"
+              href="javascript:alert('Denne side findes ikke...')"
+              >PRODUKTER</a
+            >
+          </div>
+        </article>
+        <p class="hero__timer">NÆSTE SLIDE OM 11 SEK</p>
+        <!-- end hero -->
+      </section>
+      <!-- end header -->
+    </header>
+    <main>
+      <section id="topskud">
+        <!-- products topskud -->
+        <h2 class="productHeading">TOPSKUD</h2>
+        <div class="productGrid wrapper">
+          <!-- product gorilla -->
+          <article data-productid="gorilla" class="productGrid__product">
+            <a
+              class="productGrid__product__link"
+              href="product.html?produkt=gorilla"
+            >
+              <div class="productGrid__product__imgContainer">
+                <img
+                  src="images/products/topskud/gorilla/gorilla_item.webp"
+                  alt="Produktbillede af topskuddet gorilla."
+                  class="productGrid__product__backImg"
+                />
+                <img
+                  src="images/products/topskud/gorilla/gorilla_package.webp"
+                  alt="Produktbillede af topskuddet gorilla, samt dens indpakning."
+                  class="productGrid__product__topImg"
+                />
+              </div>
+              <h3 class="productGrid__product__title">Gorilla</h3>
+              <strong class="productGrid__product__price currencyConverter"
+                >79,00 kr</strong
+              >
+            </a>
+          </article>
+          <!-- product copenhagen kush -->
+          <article data-productid="copenhagenKush" class="productGrid__product">
+            <a
+              class="productGrid__product__link"
+              href="product.html?produkt=copenhagenKush"
+            >
+              <div class="productGrid__product__imgContainer">
+                <img
+                  src="images/products/topskud/copenhagenkush/copenhagenkush_item.webp"
+                  alt="Produktbillede af topskuddet copenhagen kush."
+                  class="productGrid__product__backImg"
+                />
+                <img
+                  src="images/products/topskud/copenhagenkush/copenhagenkush_package.webp"
+                  alt="Produktbillede af topskuddet copenhagen kush, samt dens indpakning."
+                  class="productGrid__product__topImg"
+                />
+              </div>
+              <h3 class="productGrid__product__title">Copenhagen Kush</h3>
+              <strong class="productGrid__product__price currencyConverter"
+                >79,00 kr</strong
+              >
+            </a>
+          </article>
+          <!-- product headshot haze -->
+          <article data-productid="headshotHaze" class="productGrid__product">
+            <a
+              class="productGrid__product__link"
+              href="product.html?produkt=headshotHaze"
+            >
+              <div class="productGrid__product__imgContainer">
+                <img
+                  src="images/products/topskud/headshothaze/headshothaze_item.webp"
+                  alt="Produktbillede af topskuddet headshot haze"
+                  class="productGrid__product__backImg"
+                />
+                <img
+                  src="images/products/topskud/headshothaze/headshothaze_package.webp"
+                  alt="Produktbillede af topskuddet headshot haze, samt dens indpakning."
+                  class="productGrid__product__topImg"
+                />
+              </div>
+              <h3 class="productGrid__product__title">Headshot Haze</h3>
+              <strong class="productGrid__product__price currencyConverter"
+                >79,00 kr</strong
+              >
+            </a>
+          </article>
+          <!-- product hindu kush -->
+          <article data-productid="hinduKush" class="productGrid__product">
+            <a
+              class="productGrid__product__link"
+              href="product.html?produkt=hinduKush"
+            >
+              <div class="productGrid__product__imgContainer">
+                <img
+                  src="images/products/topskud/hindukush/hindukush_item.webp"
+                  alt="Produktbillede af topskuddet hindu kush."
+                  class="productGrid__product__backImg"
+                />
+                <img
+                  src="images/products/topskud/hindukush/hindukush_package.webp"
+                  alt="Produktbillede af topskuddet hindu kush, samt dens indpakning."
+                  class="productGrid__product__topImg"
+                />
+              </div>
+              <h3 class="productGrid__product__title">Hindu Kush</h3>
+              <strong class="productGrid__product__price currencyConverter"
+                >79,00 kr</strong
+              >
+            </a>
+          </article>
+          <!-- product lemon haze (didn't have item img) -->
+          <article data-productid="lemonHaze" class="productGrid__product">
+            <a
+              class="productGrid__product__link"
+              href="product.html?produkt=lemonHaze"
+            >
+              <div class="productGrid__product__imgContainer">
+                <img
+                  src="images/products/topskud/lemonhaze/lemonhaze_package.webp"
+                  alt="Produktbillede af topskuddet lemon haze."
+                  class="productGrid__product__backImg"
+                />
+              </div>
+              <h3 class="productGrid__product__title">Lemon Haze</h3>
+              <strong class="productGrid__product__price currencyConverter"
+                >79,00 kr</strong
+              >
+            </a>
+          </article>
+          <!-- product tropical buds -->
+          <article data-productid="tropicalBuds" class="productGrid__product">
+            <a
+              class="productGrid__product__link"
+              href="product.html?produkt=tropicalBuds"
+            >
+              <div class="productGrid__product__imgContainer">
+                <img
+                  src="images/products/topskud/tropicalbuds/tropicalbuds_item.webp"
+                  alt="Produktbillede af topskuddet tropical buds."
+                  class="productGrid__product__backImg"
+                />
+                <img
+                  src="images/products/topskud/tropicalbuds/tropicalbuds_package.webp"
+                  alt="Produktbillede af topskuddet tropical buds, samt dens indpakning."
+                  class="productGrid__product__topImg"
+                />
+              </div>
+              <h3 class="productGrid__product__title">Tropical Buds</h3>
+              <strong class="productGrid__product__price currencyConverter"
+                >79,00 kr</strong
+              >
+            </a>
+          </article>
+          <!-- product super grass -->
+          <article data-productid="superGrass" class="productGrid__product">
+            <a
+              class="productGrid__product__link"
+              href="product.html?produkt=superGrass"
+            >
+              <div class="productGrid__product__imgContainer">
+                <img
+                  src="images/products/topskud/supergrass/supergrass_item.webp"
+                  alt="Produktbillede af topskuddet super grass."
+                  class="productGrid__product__backImg"
+                />
+                <img
+                  src="images/products/topskud/supergrass/supergrass_package.webp"
+                  alt="Produktbillede af topskuddet super grass, samt dens indpakning."
+                  class="productGrid__product__topImg"
+                />
+              </div>
+              <h3 class="productGrid__product__title">Super Grass</h3>
+              <strong class="productGrid__product__price currencyConverter"
+                >79,00 kr</strong
+              >
+            </a>
+          </article>
+          <!-- product pineapple express -->
+          <article
+            data-productid="pineappleExpress"
+            class="productGrid__product"
+          >
+            <a
+              class="productGrid__product__link"
+              href="product.html?produkt=pineappleExpress"
+            >
+              <div class="productGrid__product__imgContainer">
+                <img
+                  src="images/products/topskud/pineappleexpress/pineappleexpress_item.webp"
+                  alt="Produktbillede af topskuddet pineapple express."
+                  class="productGrid__product__backImg"
+                />
+                <img
+                  src="images/products/topskud/pineappleexpress/pineappleexpress_package.webp"
+                  alt="Produktbillede af topskuddet pineapple express, samt dens indpakning."
+                  class="productGrid__product__topImg"
+                />
+              </div>
+              <h3 class="productGrid__product__title">Pineapple Express</h3>
+              <strong class="productGrid__product__price currencyConverter"
+                >79,00 kr</strong
+              >
+            </a>
+          </article>
+        </div>
+        <a
+          class="button button-ts button-ts--center"
+          href="javascript:alert('Denne side findes ikke...')"
+          >VIS ALLE</a
+        >
+        <!-- end products topskud -->
+      </section>
+      <!-- product (startpakken) -->
+      <section class="productFull">
+        <!-- container -->
+        <div class="productFull__container wrapper wrapper--larger">
+          <!-- content container -->
+          <div class="productFull__contentContainer">
+            <h3 class="productFull__contentContainer__header">STARTPAKKEN</h3>
+            <p class="productFull__contentContainer__text">
+              Er du i tvivl om hvilken blomst du skal vælge?
+            </p>
+            <p class="productFull__contentContainer__text">
+              Bestil startpakken med vores 5 mest populære topskud
+            </p>
+            <a
+              class="productFull__contentContainer__button button button-outline-ts"
+              href="product.html?produkt=startpakken"
+              >KØB NU</a
+            >
+          </div>
+          <!-- product img -->
+          <img
+            src="images/products/startpakken/startpakken.webp"
+            alt="Billede af startpakken, som indenholder vores top 5 bedste topskud."
+            class="productFull__img"
+          />
+          <!-- end container -->
+        </div>
+        <!-- end product (startpakken) -->
+      </section>
+      <!-- qualities -->
+      <section class="qualitiesFull">
+        <!-- qualities ul -->
+        <ul class="qualitiesFull__list wrapper">
+          <!-- list (dansk virksomhed) -->
+          <li class="qualitiesFull__listItem">
+            <img
+              src="images/qualities/dansk_virksomhed.png"
+              alt="Billede af det danske flag."
+              class="qualitiesFull__listItem__img"
+            />
+            <h4 class="qualitiesFull__listItem__header">Dansk Virksomhed</h4>
+            <p class="qualitiesFull__listItem__text">
+              Vi er en danskejet virksomhed, med lager og kontor på Sjælland.
+              Vores produkter er dyrket økologisk uden brug af kemikalier og
+              pesticider.
+            </p>
+          </li>
+          <!-- diskret levering -->
+          <li class="qualitiesFull__listItem">
+            <img
+              src="images/qualities/diskret_levering.png"
+              alt="Billede af det papkasse."
+              class="qualitiesFull__listItem__img"
+            />
+            <h4 class="qualitiesFull__listItem__header">Diskret Levering</h4>
+            <p class="qualitiesFull__listItem__text">
+              Vores forsendelser pakkes i lugttætte poser, og leveres 100%
+              diskret. Du skal derfor ikke være bekymret for at hente din pakke
+              i pakkeshoppen.
+            </p>
+          </li>
+          <!-- højeste kvalitet -->
+          <li class="qualitiesFull__listItem">
+            <img
+              src="images/qualities/hoejste_kvalitet.png"
+              alt="Billede af et grønt checkmark."
+              class="qualitiesFull__listItem__img"
+            />
+            <h4 class="qualitiesFull__listItem__header">Højeste Kvalitet</h4>
+            <p class="qualitiesFull__listItem__text">
+              Vi forhandler kun produkter af den højeste kvalitet. Alle vores
+              produkter er laboratiorietestet, og vi holder os konstant
+              opdateret på markedet og nye produkter.
+            </p>
+          </li>
+          <!-- end qualities list -->
+        </ul>
+        <!-- end qualities -->
+      </section>
+      <section id="joints">
+        <!-- products røgelsespinde -->
+        <h2 class="productHeading">RØGELSESPINDE</h2>
+        <div class="productGrid wrapper">
+          <!-- product 3pak haze -->
+          <article
+            data-productid="headshotHaze3Pak"
+            class="productGrid__product currencyConverterProduct"
+          >
+            <a
+              class="productGrid__productLink"
+              href="product.html?produkt=headshotHaze3Pak"
+            >
+              <div class="productGrid__product__imgContainer">
+                <img
+                  src="images/products/topskud/headshothaze/headshothaze_item.webp"
+                  alt="Produktbillede af topskuddet headshot haze."
+                  class="productGrid__product__backImg"
+                />
+                <img
+                  src="images/products/joints/roegelsespinde2.webp"
+                  alt="Produktbillede af 3 joints og lidt topskud bagved"
+                  class="productGrid__product__topImg"
+                />
+              </div>
+              <h3 class="productGrid__product__title">Headshot Haze (3-Pak)</h3>
+              <strong class="productGrid__product__price currencyConverter"
+                >269,00 kr</strong
+              >
+            </a>
+          </article>
+          <!-- product 3pak super grass -->
+          <article
+            data-productid="superGrass3Pak"
+            class="productGrid__product currencyConverterProduct"
+          >
+            <a
+              class="productGrid__productLink"
+              href="product.html?produkt=superGrass3Pak"
+            >
+              <div class="productGrid__product__imgContainer">
+                <img
+                  src="images/products/topskud/supergrass/supergrass_item.webp"
+                  alt="Produktbillede af topskuddet super grass."
+                  class="productGrid__product__backImg"
+                />
+                <img
+                  src="images/products/joints/roegelsespinde2.webp"
+                  alt="Produktbillede af 3 joints og lidt topskud bagved"
+                  class="productGrid__product__topImg"
+                />
+              </div>
+              <h3 class="productGrid__product__title">Super Grass (3-Pak)</h3>
+              <strong class="productGrid__product__price currencyConverter"
+                >269,00 kr</strong
+              >
+            </a>
+          </article>
+          <!-- product 3pak hindu kush -->
+          <article
+            data-productid="hinduKush3Pak"
+            class="productGrid__product currencyConverterProduct"
+          >
+            <a
+              class="productGrid__productLink"
+              href="product.html?produkt=hinduKush3Pak"
+            >
+              <div class="productGrid__product__imgContainer">
+                <img
+                  src="images/products/topskud/hindukush/hindukush_item.webp"
+                  alt="Produktbillede af topskuddet hindu kush."
+                  class="productGrid__product__backImg"
+                />
+                <img
+                  src="images/products/joints/roegelsespinde2.webp"
+                  alt="Produktbillede af 3 joints og lidt topskud bagved"
+                  class="productGrid__product__topImg"
+                />
+              </div>
+              <h3 class="productGrid__product__title">Hindu Kush (3-Pak)</h3>
+              <strong class="productGrid__product__price currencyConverter"
+                >269,00 kr</strong
+              >
+            </a>
+          </article>
+          <!-- product 3pak gorilla -->
+          <article
+            data-productid="gorilla3Pak"
+            class="productGrid__product currencyConverterProduct"
+          >
+            <a
+              class="productGrid__productLink"
+              href="product.html?produkt=gorilla3Pak"
+            >
+              <div class="productGrid__product__imgContainer">
+                <img
+                  src="images/products/topskud/gorilla/gorilla_item.webp"
+                  alt="Produktbillede af topskuddet gorilla."
+                  class="productGrid__product__backImg"
+                />
+                <img
+                  src="images/products/joints/roegelsespinde2.webp"
+                  alt="Produktbillede af 3 joints og lidt topskud bagved"
+                  class="productGrid__product__topImg"
+                />
+              </div>
+              <h3 class="productGrid__product__title">Gorilla (3-Pak)</h3>
+              <strong class="productGrid__product__price currencyConverter"
+                >269,00 kr</strong
+              >
+            </a>
+          </article>
+          <!-- product 3pak tropical buds -->
+          <article
+            data-productid="tropicalBuds3Pak"
+            class="productGrid__product currencyConverterProduct"
+          >
+            <a
+              class="productGrid__productLink"
+              href="product.html?produkt=tropicalBuds3Pak"
+            >
+              <div class="productGrid__product__imgContainer">
+                <img
+                  src="images/products/topskud/tropicalbuds/tropicalbuds_item.webp"
+                  alt="Produktbillede af topskuddet tropical buds."
+                  class="productGrid__product__backImg"
+                />
+                <img
+                  src="images/products/joints/roegelsespinde2.webp"
+                  alt="Produktbillede af 3 joints og lidt topskud bagved"
+                  class="productGrid__product__topImg"
+                />
+              </div>
+              <h3 class="productGrid__product__title">Tropical Buds (3-Pak)</h3>
+              <strong class="productGrid__product__price currencyConverter"
+                >269,00 kr</strong
+              >
+            </a>
+          </article>
+          <!-- product 3pak copenhagen kush -->
+          <article
+            data-productid="copenhagenKush3Pak"
+            class="productGrid__product currencyConverterProduct"
+          >
+            <a
+              class="productGrid__productLink"
+              href="product.html?produkt=copenhagenKush3Pak"
+            >
+              <div class="productGrid__product__imgContainer">
+                <img
+                  src="images/products/topskud/copenhagenkush/copenhagenkush_item.webp"
+                  alt="Produktbillede af topskuddet copenhagen kush."
+                  class="productGrid__product__backImg"
+                />
+                <img
+                  src="images/products/joints/roegelsespinde2.webp"
+                  alt="Produktbillede af 3 joints og lidt topskud bagved"
+                  class="productGrid__product__topImg"
+                />
+              </div>
+              <h3 class="productGrid__product__title">
+                Copenhagen Kusk (3-Pak)
+              </h3>
+              <strong class="productGrid__product__price currencyConverter"
+                >269,00 kr</strong
+              >
+            </a>
+          </article>
+          <!-- product 3pak lemon haze -->
+          <article
+            data-productid="lemonHaze3Pak"
+            class="productGrid__product currencyConverterProduct"
+          >
+            <a
+              class="productGrid__productLink"
+              href="product.html?produkt=lemonHaze3Pak"
+            >
+              <div class="productGrid__product__imgContainer">
+                <img
+                  src="images/products/topskud/copenhagenkush/copenhagenkush_item.webp"
+                  alt="Produktbillede af topskuddet lemon haze."
+                  class="productGrid__product__backImg"
+                />
+                <img
+                  src="images/products/joints/roegelsespinde.webp"
+                  alt="Produktbillede af 3 joints og lidt topskud bagved"
+                  class="productGrid__product__topImg"
+                />
+              </div>
+              <h3 class="productGrid__product__title">Lemon Haze (3-Pak)</h3>
+              <strong class="productGrid__product__price currencyConverter"
+                >269,00 kr</strong
+              >
+            </a>
+          </article>
+          <!-- product 3pak made in heaven -->
+          <article
+            data-productid="madeInHeaven3Pak"
+            class="productGrid__product currencyConverterProduct"
+          >
+            <a
+              class="productGrid__productLink"
+              href="product.html?produkt=madeInHeaven3Pak"
+            >
+              <div class="productGrid__product__imgContainer">
+                <img
+                  src="images/products/topskud/lemonhaze/lemonhaze_package.webp"
+                  alt="Produktbillede af topskuddet headshot haze i indpakning."
+                  class="productGrid__product__backImg"
+                />
+                <img
+                  src="images/products/joints/roegelsespinde2.webp"
+                  alt="Produktbillede af 3 joints og lidt topskud bagved"
+                  class="productGrid__product__topImg"
+                />
+              </div>
+              <h3 class="productGrid__product__title">
+                Made In Heaven (3-Pak)
+              </h3>
+              <strong class="productGrid__product__price currencyConverter"
+                >269,00 kr</strong
+              >
+            </a>
+          </article>
+        </div>
+        <a
+          class="button button-ts button-ts--center"
+          href="javascript:alert('Denne side findes ikke...')"
+          >VIS ALLE</a
+        >
+        <!-- end products røgelsespinde -->
+      </section>
+    </main>
+    <footer>
+      <div class="wrapper wrapper--smaller footerContainer">
+        <div class="footerContainer__socials footerElement">
+          <a
+            class="footerElement__txt"
+            href="https://facebook.com"
+            target="_blank"
+            ><i class="fab fa-facebook-f"></i></a
+          ><a
+            class="footerElement__txt"
+            href="https://instagram.com"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <div class="footerContainer__sitemap footerElement">
+          <div class="dropdownModuleContainer">
+            <h5 class="footerElement__header dropdownModule__header">
+              SITEMAP
+            </h5>
+            <i class="fas fa-chevron-down dropdownModule__arrow"></i>
+          </div>
+          <ul class="footerElement__list dropdownModuleDropdown">
+            <li class="footerElement__txt">
+              <a
+                class="underlineEffect"
+                href="javascript:alert('Denne side findes ikke...')"
+                >Hjem</a
+              >
+            </li>
+            <li class="footerElement__txt">
+              <a
+                class="underlineEffect"
+                href="javascript:alert('Denne side findes ikke...')"
+                >Produkter</a
+              >
+            </li>
+            <li class="footerElement__txt">
+              <a
+                class="underlineEffect"
+                href="javascript:alert('Denne side findes ikke...')"
+                >Om os</a
+              >
+            </li>
+            <li class="footerElement__txt">
+              <a
+                class="underlineEffect"
+                href="javascript:alert('Denne side findes ikke...')"
+                >Ofte stillede spørgsmål</a
+              >
+            </li>
+            <li class="footerElement__txt">
+              <a
+                class="underlineEffect"
+                href="javascript:alert('Denne side findes ikke...')"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footerContainer__others footerElement">
+          <div class="dropdownModuleContainer">
+            <h5 class="footerElement__header dropdownModule__header">ANDET</h5>
+            <i class="fas fa-chevron-down dropdownModule__arrow"></i>
+          </div>
+          <ul class="footerElement__list dropdownModuleDropdown">
+            <li class="footerElement__txt">
+              <a
+                class="underlineEffect"
+                href="javascript:alert('Denne side findes ikke...')"
+                >Handelsbetingelser</a
+              >
+            </li>
+            <li class="footerElement__txt">
+              <a
+                class="underlineEffect"
+                href="javascript:alert('Denne side findes ikke...')"
+                >Refusionspolitik</a
+              >
+            </li>
+            <li class="footerElement__txt">
+              <a
+                class="underlineEffect"
+                href="javascript:alert('Denne side findes ikke...')"
+                >Servicevilkår</a
+              >
+            </li>
+            <li class="footerElement__txt">
+              <a
+                class="underlineEffect"
+                href="javascript:alert('Denne side findes ikke...')"
+                >Privatlivspolitik</a
+              >
+            </li>
+            <li class="footerElement__txt">
+              <a
+                class="underlineEffect"
+                href="javascript:alert('Denne side findes ikke...')"
+                >Servicevilkår</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footerContainer__newsletter footerElement">
+          <h5 class="footerElement__header">TILMELD DIG VORES NYHEDSBREV</h5>
+          <p class="footerElement__txt">
+            Få adgang til eksklusive priser, og vær den første til at høre om
+            nye produkter.
+          </p>
+          <form class="mailForm" action="index.html">
+            <input
+              type="email"
+              name="email"
+              class="mailForm__input"
+              placeholder="Indtast din e-mail"
+            />
+            <p class="mailForm__error"></p>
+            <button class="mailForm__submit" type="submit">TILMELD</button>
+          </form>
+        </div>
+      </div>
+      <div class="footerBottom wrapper wrapper--smaller">
+        <p class="footerBottom__text">
+          CBD produkter er ikke medicin og kan ikke diagnosticere, behandle
+          eller kurere sygdomme.<br />Rådfør dig altid med egen læge, før du
+          starter på et nyt kostsupplerende program.<br />
+          CVR: sut erri
+        </p>
+        <ul class="paymentOptions">
+          <li class="paymentOptions__element">
+            <img
+              src="images/payment_options/visa-color_x32.png"
+              alt="Betalingsmuligheden Visa, hermed et logo af den."
+              class="paymentOptions__img"
+            />
+          </li>
+          <li class="paymentOptions__element">
+            <img
+              src="images/payment_options/mobilepay_x32.png"
+              alt="Betalingsmuligheden MobilePay, hermed et logo af den."
+              class="paymentOptions__img"
+            />
+          </li>
+          <li class="paymentOptions__element">
+            <img
+              src="images/payment_options/mastercard-color_x32.png"
+              alt="Betalingsmuligheden Mastercard, hermed et logo af den."
+              class="paymentOptions__img"
+            />
+          </li>
+          <li class="paymentOptions__element">
+            <img
+              src="images/payment_options/applepay-color_x32.png"
+              alt="Betalingsmuligheden ApplePay, hermed et logo af den."
+              class="paymentOptions__img"
+            />
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- end body -->
+    <script>
+      feather.replace()
+    </script>
   </body>
 </html>

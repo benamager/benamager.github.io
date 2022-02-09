@@ -1,0 +1,93 @@
+footer {
+  margin-top: 3.5rem;
+  width: 100%;
+  background-color: var(--colorBcg-footer);
+  color: var(--colorTxt-footerHeader);
+}
+
+/* footer content container */
+.wrapper.footerContainer {
+  padding-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* footer sections title */
+.footerElement__header {
+  font-size: 1.07rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.footerElement__list .footerElement__txt:not(:last-of-type) {
+  margin-bottom: 0.7rem;
+}
+
+/* footer links */
+.footerElement__txt a,
+.footerElement__txt {
+  color: var(--colorTxt-footerText);
+  font-weight: 300;
+}
+
+.footerContainer__socials a:first-of-type {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
+/* footer bottom */
+.wrapper.footerBottom {
+  display: flex;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.footerBottom__text {
+  color: var(--colorTxt-footerBelow);
+  line-height: 2;
+}
+
+.dropdownModule__arrow {
+  display: none;
+}
+
+/* media queries */
+@media screen and (max-width: 885px) {
+  /* footer */
+  .wrapper.footerContainer {
+    grid-template-columns: 1fr;
+  }
+  .footerContainer__newsletter {
+    margin-top: 2rem;
+  }
+  /* removes styling */
+  .footerElement__header {
+    margin-bottom: 0;
+  }
+  /* shows the arrow */
+  .dropdownModule__arrow {
+    display: block;
+  }
+  /* the header and arrow container */
+  .dropdownModuleContainer {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ffffff;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .dropdownModuleDropdown {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--time-footerDropdownMobile);
+  }
+  /* footer bottom */
+  .wrapper.footerBottom {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+  }
+}
